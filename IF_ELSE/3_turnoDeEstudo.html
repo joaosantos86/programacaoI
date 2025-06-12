@@ -1,0 +1,25 @@
+
+<meta charset="UTF-8">
+
+<!-- 
+    Faça um script que pergunte em que turno você estuda.
+    Peça para digitar M-matutino ou V-Vespertino ou N-Noturno.
+    Imprima a mensagem correspondente:
+    "Bom dia!", "Boa tarde!" ou "Boa noite!".
+-->
+
+<script>
+    // ENTRADA
+    let turno = prompt("Digite o turno em que você estuda (M-matutino, V-Vespertino, N-Noturno):");
+
+    // PROCESSAMENTO E SAÍDA
+    if (turno === "M" || turno === "m") {
+        alert("Bom dia!");
+    } else if (turno === "V" || turno === "v") {
+        alert("Boa tarde!");
+    } else if (turno === "N" || turno === "n") {
+        alert("Boa noite!");
+    } else {
+        alert("Turno inválido. Por favor, digite M, V ou N.");
+    }
+</script>
