@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<!-- 
+    Este programa lê três números digitados pelo usuário
+    e os exibe em ordem crescente.
+-->
+
+<script>
+    // ENTRADA
+    let numero1 = Number(prompt("Digite o primeiro número:"));
+    let numero2 = Number(prompt("Digite o segundo número:"));   
+    let numero3 = Number(prompt("Digite o terceiro número:"));
+
+    // PROCESSAMENTO
+    if (numero1 > numero2) {
+        let salvarNumero = numero1;
+        numero1 = numero2;
+        numero2 = salvarNumero;
+    }
+
+    if (numero2 > numero3) {
+        let salvarNumero = numero2;
+        numero2 = numero3;
+        numero3 = salvarNumero;
+    }
+
+    if (numero1 > numero2) {
+        let salvarNumero = numero1;
+        numero1 = numero2;
+        numero2 = salvarNumero;
+    }
+
+    // SAÍDA
+    alert("Números em ordem crescente:\n" + numero1 + "\n" + numero2 + "\n" + numero3);
+</script>
