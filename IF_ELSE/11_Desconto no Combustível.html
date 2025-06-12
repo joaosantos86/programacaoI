@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<script>
+//     Um posto está vendendo combustíveis com a seguinte tabela de descontos: Álcool:
+
+// até 20 litros, desconto de 3% por litro
+// acima de 20 litros, desconto de 5% por litro
+// Gasolina:
+
+// até 20 litros, desconto de 4% por litro
+// acima de 20 litros, desconto de 6% por litro
+// Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 6,50 o preço do litro do álcool é R$ 6,10.
+
+let litrosvendidos = Number(prompt("Insira um número de litros vendidos"));
+let tipoCombustivel = prompt("Insira o tipo de combustível usando (A-álcool, G-gasolina)").toUpperCase();
+let precoFinal = 0;
+
+if (tipoCombustivel == "A") {
+    let precoBruto = litrosvendidos * 6.10;
+    if (litrosvendidos <= 20) {
+        let desconto = (precoBruto * 3) / 100;
+        precoFinal = precoBruto - desconto;
+    } else {
+        let desconto = (precoBruto * 5) / 100;
+        precoFinal = precoBruto - desconto;
+    }
+    alert(`O preço final é: R$ ${precoFinal.toFixed(2)}`);
+} else if (tipoCombustivel == "G") {
+    let precoBruto = litrosvendidos * 6.50;
+    if (litrosvendidos <= 20) {
+        let desconto = (precoBruto * 4) / 100;
+        precoFinal = precoBruto - desconto;
+    } else {
+        let desconto = (precoBruto * 6) / 100;
+        precoFinal = precoBruto - desconto;
+    }
+    alert(`O preço final é: R$ ${precoFinal.toFixed(2)}`);
+} else {
+    alert("Insira um tipo de combustível válido");
+}
+
+</script>
