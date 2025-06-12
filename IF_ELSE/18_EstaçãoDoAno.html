@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+<script>
+    let hemisferio = prompt("Informe o hemisfério (Norte ou Sul)")
+    let mes = prompt("Informe o mês atual (ex: janeiro, fevereiro...)")
+    let estacao = ""
+
+    if (hemisferio == "Sul") {
+        if (mes == "dezembro" || mes == "janeiro" || mes == "fevereiro") {
+            estacao = "Verão"
+        } else {
+            if (mes == "março" || mes == "abril" || mes == "maio") {
+                estacao = "Outono"
+            } else {
+                if (mes == "junho" || mes == "julho" || mes == "agosto") {
+                    estacao = "Inverno"
+                } else {
+                    if (mes == "setembro" || mes == "outubro" || mes == "novembro") {
+                        estacao = "Primavera"
+                    } else {
+                        alert("Mês inválido")
+                    }
+                }
+            }
+        }
+    } else {
+        if (hemisferio == "Norte") {
+            if (mes == "dezembro" || mes == "janeiro" || mes == "fevereiro") {
+                estacao = "Inverno"
+            } else {
+                if (mes == "março" || mes == "abril" || mes == "maio") {
+                    estacao = "Primavera"
+                } else {
+                    if (mes == "junho" || mes == "julho" || mes == "agosto") {
+                        estacao = "Verão"
+                    } else {
+                        if (mes == "setembro" || mes == "outubro" || mes == "novembro") {
+                            estacao = "Outono"
+                        } else {
+                            alert("Mês inválido")
+                        }
+                    }
+                }
+            }
+        } else {
+            alert("Hemisfério inválido")
+        }
+    }
+
+    if (estacao != "") {
+        alert(`A estação do ano no hemisfério ${hemisferio} é: ${estacao}`)
+    }
+</script>
