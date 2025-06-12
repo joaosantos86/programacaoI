@@ -1,0 +1,31 @@
+<!-- Faça um script que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar. O resultado da operação deve ser acompanhado de uma frase que diga se o número é:
+
+par ou ímpar;
+positivo ou negativo;
+inteiro ou decimal. -->
+
+<meta charset="UTF-8">
+<script>
+    let numero1 = Number(prompt("Insira o primeiro valor"))
+    let numero2 = Number(prompt("Insira o segundo valor"))
+    let operacao = prompt("Fale a operação que deseja realizar. Use: A para adição, S para subtração, M para multiplicação e D para divisão")
+    let resultado = 0;
+
+    if (operacao == "A" || operacao == "S" || operacao == "M" || operacao == "D") {
+        if (operacao == "A") {
+            resultado = numero1 + numero2;
+            alert(`o resultado é ${resultado}`);
+        } else if (operacao == "S") {
+            resultado = numero1 - numero2;
+            alert(`o resultado é ${resultado}`);
+        } else if (operacao == "M") {
+            resultado = numero1 * numero2;
+            alert(`o resultado é ${resultado}`);
+        } else if (operacao == "D") {
+            resultado = numero1 / numero2;
+            alert(`o resultado é ${resultado}`);
+        }
+    } else {
+        alert("Use alguma das sugestões acima");
+    }
+</script>
