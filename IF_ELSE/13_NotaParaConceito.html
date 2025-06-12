@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<script>
+    //     Converta a nota para conceito, conforme a tabela abaixo:
+
+    // Nota	            Conceito
+    // Entre 10.0 e 9.0	   A
+    // Entre 8.9 e 8.0	   B
+    // Entre 7.9 e 7.0	   C
+    // Entre 6.9 e 6.0	   D
+    // Entre 5.9 e zero	   E
+
+    let nota = Number(prompt("Insira sua nota"))
+    let notaA = "A";
+    let notaB = "B";
+    let notaC = "C";
+    let notaD = "D";
+    let notaE = "E";
+    let conceito = "";
+
+
+
+    if (nota >= 0 && nota <= 10) {
+        if (nota <= 10 && nota >= 9) {
+            conceito = notaA
+            alert(`O conceito da sua nota é: ${conceito}`)
+        } else if (nota <= 8.9 && nota >= 8) {
+            conceito = notaB
+            alert(`O conceito da sua nota é: ${conceito}`)
+        } else if (nota <= 7.9 && nota >= 7) {
+            conceito = notaC
+            alert(`O conceito da sua nota é: ${conceito}`)
+        } else if (nota <= 6.9 && nota >= 6) {
+            conceito = notaD
+            alert(`O conceito da sua nota é: ${conceito}`)
+        } else if (nota <= 5.9 && nota >= 0) {
+            conceito = notaE
+            alert(`O conceito da sua nota é: ${conceito}`)
+        }
+    } else {
+        alert("Insira uma nota entre 10 e 0")
+    }
+</script>
