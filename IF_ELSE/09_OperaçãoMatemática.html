@@ -14,17 +14,19 @@ inteiro ou decimal. -->
     if (operacao == "A" || operacao == "S" || operacao == "M" || operacao == "D") {
         if (operacao == "A") {
             resultado = numero1 + numero2;
-            alert(`o resultado é ${resultado}`);
         } else if (operacao == "S") {
             resultado = numero1 - numero2;
-            alert(`o resultado é ${resultado}`);
         } else if (operacao == "M") {
             resultado = numero1 * numero2;
-            alert(`o resultado é ${resultado}`);
         } else if (operacao == "D") {
             resultado = numero1 / numero2;
-            alert(`o resultado é ${resultado}`);
         }
+
+        let parOuImpar = (resultado % 2 === 0) ? "par" : "ímpar";
+        let positivoOuNegativo = (resultado >= 0) ? "positivo" : "negativo";
+        let inteiroOuDecimal = (Number.isInteger(resultado)) ? "inteiro" : "decimal";
+
+        alert(`O resultado é ${resultado}, que é ${parOuImpar}, ${positivoOuNegativo} e ${inteiroOuDecimal}.`);
     } else {
         alert("Use alguma das sugestões acima");
     }
