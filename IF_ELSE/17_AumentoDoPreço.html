@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+// Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
+
+// até 280(inclusive): aumento de 20 %
+// até 700(inclusive): aumento de 15 %
+// até 1500(inclusive): aumento de 10 %
+// acima de 1500: aumento de 5 %
+
+let preco = Number(prompt("Informe o preço do produto"))
+let novoPreco = 0;
+
+if (preco <= 280) {
+    novoPreco = preco + (preco * 20 / 100)
+    alert(`Novo preço com 20% de aumento: ${novoPreco}`)
+} else if (preco <= 700) {
+    novoPreco = preco + (preco * 15 / 100)
+    alert(`Novo preço com 15% de aumento: ${novoPreco}`)
+} else if (preco <= 1500) {
+    novoPreco = preco + (preco * 10 / 100)
+    alert(`Novo preço com 10% de aumento: ${novoPreco}`)
+} else if (preco > 1500) {
+    novoPreco = preco + (preco * 5 / 100)
+    alert(`Novo preço com 5% de aumento: ${novoPreco}`)
+}
+</script>
