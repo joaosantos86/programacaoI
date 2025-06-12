@@ -1,0 +1,80 @@
+
+<meta charset="UTF-8">
+<script>
+     //ENTRADA
+    let quantia = Number(prompt(`Informe a quantia que deseja realizar saque: `));
+    
+    //PROCESSAMENTO
+    if (quantia >= 10 && quantia <= 600) {
+        let notasCem = Math.floor(quantia / 100);
+        let notasCinquenta = Math.floor((quantia % 100) / 50)
+        let notasDez = Math.floor((quantia % 50) / 10);
+        let notasCinco = Math.floor((quantia % 10) / 5);
+        let notasUm = Math.floor(quantia % 5);
+        let notasDiferentes = 0;
+        if (notasCem > 0) notasDiferentes++;
+        if (notasCinquenta > 0) notasDiferentes++;
+        if (notasDez > 0) notasDiferentes++;
+        if (notasCinco > 0) notasDiferentes++;
+        if (notasUm > 0) notasDiferentes++;
+        let mensagemFinal = `Para sacar a quantia de ${quantia}, o script fornece `;
+        if (notasCem > 1) {
+            notasDiferentes--;
+            mensagemFinal = mensagemFinal + `${notasCem} notas de 100`;
+            if (notasDiferentes >= 2) mensagemFinal = mensagemFinal + `, `;
+            else if (notasDiferentes == 1) mensagemFinal = mensagemFinal + ` e `;
+        }
+        else if (notasCem == 1) {
+            notasDiferentes--;
+            mensagemFinal = mensagemFinal + `${notasCem} nota de 100`;
+            if (notasDiferentes >= 2) mensagemFinal = mensagemFinal + `, `;
+            else if (notasDiferentes == 1) mensagemFinal = mensagemFinal + ` e `;
+        }
+        if (notasCinquenta > 1) {
+            notasDiferentes--;
+            mensagemFinal = mensagemFinal + `${notasCinquenta} notas de 50`;
+            if (notasDiferentes >= 2) mensagemFinal = mensagemFinal + `, `;
+            else if (notasDiferentes == 1) mensagemFinal = mensagemFinal + ` e `;
+        }
+        else if (notasCinquenta == 1) {
+            notasDiferentes--;
+            mensagemFinal = mensagemFinal + `${notasCinquenta} notas de 50`;
+            if (notasDiferentes >= 2) mensagemFinal = mensagemFinal + `, `;
+            else if (notasDiferentes == 1) mensagemFinal = mensagemFinal + ` e `;
+        }
+        if (notasDez > 1) {
+            notasDiferentes--;
+            mensagemFinal = mensagemFinal + `${notasDez} notas de 10`;
+            if (notasDiferentes >= 2) mensagemFinal = mensagemFinal + `, `;
+            else if (notasDiferentes == 1) mensagemFinal = mensagemFinal + ` e `;
+        }
+        else if (notasDez == 1) {
+            notasDiferentes--;
+            mensagemFinal = mensagemFinal + `${notasDez} notas de 50`;
+            if (notasDiferentes >= 2) mensagemFinal = mensagemFinal + `, `;
+            else if (notasDiferentes == 1) mensagemFinal = mensagemFinal + ` e `;
+        }
+        if (notasCinco > 1) {
+            notasDiferentes--;
+            mensagemFinal = mensagemFinal + `${notasCinco} notas de 5`;
+            if (notasDiferentes == 1) mensagemFinal = mensagemFinal + ` e `;
+        }
+        else if (notasCinco == 1) {
+            notasDiferentes--;
+            mensagemFinal = mensagemFinal + `${notasCinco} nota de 5`;
+            if (notasDiferentes == 1) mensagemFinal = mensagemFinal + ` e `;
+        }
+        if (notasUm > 1) {
+            mensagemFinal = mensagemFinal + `${notasUm} notas de 1`;
+        }
+        else if (notasUm == 1) {
+            mensagemFinal = mensagemFinal + `${notasUm} nota de 1`;
+        }
+        document.write(mensagemFinal);
+    }
+    else {
+        alert(`Quantia Inválida: Informe quantia entre R$ 10,00 e R$ 600,00`);
+    }
+    
+    //SAÍDA
+</script>
