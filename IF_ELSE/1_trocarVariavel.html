@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<!-- 
+    Faça um script que pede dois números inteiros e os armazena em duas variáveis.
+    Em seguida, troque os valores das variáveis e exiba o antes e o depois.
+-->
+
+<script>
+    // ENTRADA
+    let numero1 = Number(prompt("Digite o primeiro número:"));
+    let numero2 = Number(prompt("Digite o segundo número:"));
+
+    // SAÍDA
+    alert("Antes da troca:\nNúmero 1: " + numero1 + "\nNúmero 2: " + numero2);
+
+    // PROCESSAMENTO
+    let salvarNumero = numero1;
+    numero1 = numero2;
+    numero2 = salvarNumero;
+
+    // SAÍDA
+    alert("Após a troca:\nNúmero 1: " + numero1 + "\nNúmero 2: " + numero2);
+</script>
