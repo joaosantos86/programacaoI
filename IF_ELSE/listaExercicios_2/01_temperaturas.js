@@ -24,10 +24,10 @@ const rl = readline.createInterface({
 });
 
 rl.question('Informe a temperatura em graus Celsius: ', (input) => {
-  const temperatura = Number(input);
+  const temperatura = parseFloat(input);
 
   if (isNaN(temperatura)) {
-    console.log("Por favor, informe um número válido!");
+    console.log("❌ Por favor, informe um número válido!");
     rl.close();
     return;
   }
@@ -44,6 +44,7 @@ rl.question('Informe a temperatura em graus Celsius: ', (input) => {
 
   rl.close();
 });
+
 
 
 
