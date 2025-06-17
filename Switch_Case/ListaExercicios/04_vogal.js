@@ -1,0 +1,1 @@
+// Construa um programa que leia um caractere e informe se este caractere é uma vogal.

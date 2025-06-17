@@ -1,0 +1,2 @@
+// Faça um script que pergunte para a pessoa em qual hemisfério ela está e qual o mês atual.
+// De acordo com as respostas, informe qual a estação do ano correspondente.
