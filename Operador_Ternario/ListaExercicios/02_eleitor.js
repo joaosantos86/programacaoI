@@ -1,0 +1,1 @@
+// Considerando que no Brasil é possível votar a partir dos 16 anos de idade, faça um script que peça o ano de nascimento de uma pessoa e informe se ela poderá votar no ano atual. Ignore mês e dia de nascimento.
