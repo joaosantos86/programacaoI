@@ -22,7 +22,6 @@ O conteúdo está organizado em pastas temáticas, agrupando os exercícios por 
 
 PROGRAMACAO1-2/
 ├── IF_ELSE/
-
 │ ├── listaExercicios/
 
 │ │ ├── 01_AumentoDoPreco.html
