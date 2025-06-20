@@ -56,4 +56,4 @@ Os exercícios são desenvolvidos principalmente em:
 
 ---
 
-> ✅ Este repositório é atualizado continuamente conforme as atividades vão sendo desenvolvidas.
+> ✅ Este repositório é atualizado continuamente conforme as atividades vão sendo desenvolvidas
