@@ -7,3 +7,24 @@
 // | Entre 6.9 e 6.0 | D |
 // | Entre 5.9 e zero | E | -->
 
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    let nota = Number(prompt(`Informe a nota (0 a 10)`));
+
+    //Processamento
+    (nota >= 9 && nota <= 10) ? 
+        alert(`Conceito A`) : 
+        (nota >= 8 && nota < 9) ? 
+        alert(`Conceito B`) : 
+        (nota >= 7 && nota < 8) ? 
+        alert(`Conceito C`) : 
+        (nota >= 6 && nota < 7) ? 
+        alert(`Conceito D`) : 
+        (nota >= 0 && nota < 6) ? 
+        alert(`Conceito E`) :
+        alert(`Nota inválida`);
+    
+    //Saída
+
+</script>

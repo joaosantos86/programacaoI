@@ -4,3 +4,21 @@
 // - Se o total de horas trabalhadas ultrapassar 60 horas, haverá adicional de 30%.
 
 // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada. -->
+
+<meta charset="UTF-8">
+<script>
+    //Entrada
+    let horasTrabalhadas = Number(prompt(`Informe quantas horas você trabalha semanalmente`));
+    let recebePorHora = Number(prompt(`Informe quanto você ganha por hora trabalhada`)); 
+
+    //Processamento
+    let resposta 
+
+    (horasTrabalhadas <= 45) ? 
+    resposta = `seu salário semanal é de R$ ${horasTrabalhadas * recebePorHora}`: (horasTrabalhadas > 45 && horasTrabalhadas < 60) ? 
+    resposta = `seu salário semanal é de R$ ${(horasTrabalhadas * recebePorHora) + (horasTrabalhadas * recebePorHora) * 0.2}` : 
+    resposta = `seu salário semanal é de R$ ${(horasTrabalhadas * recebePorHora) + (horasTrabalhadas * recebePorHora) * 0.3}`  ;
+    
+    //Saída
+    alert(resposta); 
+</script>
