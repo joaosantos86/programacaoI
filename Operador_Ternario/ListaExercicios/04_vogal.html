@@ -1,0 +1,17 @@
+<!-- // Construa um programa que peça para o usuário informar um caractere e apresente a mensagem descrevendo se este caractere é uma vogal. -->
+
+<meta charset="UTF-8">
+<script>
+  let caractere = prompt("Informe UM caractere:");
+
+  let mensagem = 
+    (caractere === 'a' || caractere === 'A' ||
+     caractere === 'e' || caractere === 'E' ||
+     caractere === 'i' || caractere === 'I' ||
+     caractere === 'o' || caractere === 'O' ||
+     caractere === 'u' || caractere === 'U')
+    ? "O caractere é uma vogal."
+    : "O caractere NÃO é uma vogal.";
+
+  alert(mensagem);
+</script>

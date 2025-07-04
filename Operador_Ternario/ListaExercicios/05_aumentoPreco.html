@@ -1,0 +1,25 @@
+<!-- // Peça para o usuário informar o preço do produto e calcule o aumento do preço, baseado no seguinte critério:
+// - até 280(inclusive): aumento de 20 %
+// - até 700(inclusive): aumento de 15 %
+// - até 1500(inclusive): aumento de 10 %
+// - acima de 1500: aumento de 5 % -->
+
+<meta charset="UTF-8">
+<script>
+  let preco = parseFloat(prompt("Informe o preço do produto: R$"));
+
+  let percentual = (preco <= 280) ? 0.20 :
+                   (preco <= 700) ? 0.15 :
+                   (preco <= 1500) ? 0.10 :
+                   0.05;
+
+  let aumento = preco * percentual;
+  let novoPreco = preco + aumento;
+
+  alert(
+    `Preço original: R$ ${preco.toFixed(2)}\n` +
+    `Percentual de aumento: ${(percentual * 100).toFixed(0)}%\n` +
+    `Valor do aumento: R$ ${aumento.toFixed(2)}\n` +
+    `Novo preço: R$ ${novoPreco.toFixed(2)}`
+  );
+</script>
