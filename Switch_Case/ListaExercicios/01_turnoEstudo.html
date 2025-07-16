@@ -1,0 +1,30 @@
+<!-- // Faça um script que pergunte em que turno você estuda.
+// Peça para digitar M-matutino ou V-Vespertino ou N- Noturno.
+
+// Imprima a mensagem:
+// - "Bom Dia!"
+// - "Boa Tarde!" ou
+// - "Boa Noite!" ou
+// - "Valor Inválido!" -->
+
+<meta charset="UTF-8">
+<script>
+    let turno = prompt("Informe em que turno você estuda: M-matutino ou V-Vespertino ou N- Noturno");
+    switch (turno) {
+        
+        case "M":
+            document.write("Você estuda no turno matutino");
+            break;
+
+        case "V":
+            document.write("Você estuda no turno vespertino");
+            break;
+
+        case "N":
+            document.write("Você estuda no turno noturno");
+            break;
+        default: 
+            document.write("Opção inválida")
+    }   
+
+</script>
