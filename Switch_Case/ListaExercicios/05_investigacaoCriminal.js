@@ -12,3 +12,9 @@
 // | 2 Respostas | Suspeito(a)! |
 // | 3-4 Respostas | Cúmplice! |
 // | 5 Respostas | Assassino(a)! |
+
+<meta charset="UTF-8">
+<script>
+let pontos = 0;
+let telefonou = Number(prompt("Informe se você telefonou para a vitima 1 - sim 0 - não"))
+</script>
