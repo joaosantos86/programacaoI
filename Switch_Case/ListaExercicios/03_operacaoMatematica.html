@@ -5,15 +5,71 @@
 
 <meta charset="UTF-8">
 <script>
-    let numeroUm = Number(prompt("Informe o primeiro número"));
-    let numeroDois = Number(prompt("Informe o segundo número"));
-    let operacao = prompt("Informe a operação que deseja realizar use + para somar - para subtrair * para multiplicar e / para divisao");
-    switch(operacao) {
-        case "+": 
-        let resultado = numeroUm + numeroDois
-        let parImpar = resultado % 2
-        let positivoNegativo = resultado >= 0
-        alert(`O resultado da soma é ${resultado}, o número é ${parImpar} e o número é ${inteiroDecimal}`)
-        break;
+    let numeroUm = Number(prompt("Informe o primeiro número:"));
+    let numeroDois = Number(prompt("Informe o segundo número:"));
+    let operacao = prompt("Informe a operação (+, -, *, /):");
+
+    let resultado;
+    let parImpar = "";
+    let positivoNegativo = "";
+    let inteiroDecimal = "";
+
+    switch (operacao) {
+        case "+":
+            resultado = numeroUm + numeroDois;
+            break;
+        case "-":
+            resultado = numeroUm - numeroDois;
+            break;
+        case "*":
+            resultado = numeroUm * numeroDois;
+            break;
+        case "/":
+            resultado = numeroDois !== 0 ? numeroUm / numeroDois : NaN;
+            break;
+        default:
+            alert("Operação inválida.");
+            resultado = NaN;
+            break;
+    }
+
+    if (isNaN(resultado)) {
+        alert("Erro na operação. Verifique os valores.");
+    } else {
+
+        switch (resultado % 2) {
+            case 0:
+                parImpar = "par";
+                break;
+            case 1:
+            case -1:
+                parImpar = "ímpar";
+                break;
+        }
+
+
+        switch (true) {
+            case (resultado > 0):
+                positivoNegativo = "positivo";
+                break;
+            case (resultado < 0):
+                positivoNegativo = "negativo";
+                break;
+            case (resultado === 0):
+                positivoNegativo = "neutro";
+                break;
+        }
+
+        switch (resultado % 1 === 0) {
+            case true:
+                inteiroDecimal = "inteiro";
+                break;
+            case false:
+                inteiroDecimal = "decimal";
+                break;
+        }
+
+        alert(`O resultado da operação é ${resultado}.
+O número é ${parImpar}, ${positivoNegativo} e ${inteiroDecimal}.`);
     }
 </script>

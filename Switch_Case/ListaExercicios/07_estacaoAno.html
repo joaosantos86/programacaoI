@@ -1,0 +1,74 @@
+// Faça um script que pergunte para a pessoa em qual hemisfério ela está e qual o mês atual.
+// De acordo com as respostas, informe qual a estação do ano correspondente.
+
+
+<meta charset="UTF-8">
+<script>
+    let hemisferio = prompt("Informe o hemisfério em que você está (norte ou sul):").toLowerCase().trim();
+    let mes = prompt("Informe o mês atual (ex: janeiro):").toLowerCase().trim();
+    let estacao = "";
+
+    switch (hemisferio) {
+        case "sul":
+            switch (mes) {
+                case "dezembro":
+                case "janeiro":
+                case "fevereiro":
+                    estacao = "Verão";
+                    break;
+                case "março":
+                case "abril":
+                case "maio":
+                    estacao = "Outono";
+                    break;
+                case "junho":
+                case "julho":
+                case "agosto":
+                    estacao = "Inverno";
+                    break;
+                case "setembro":
+                case "outubro":
+                case "novembro":
+                    estacao = "Primavera";
+                    break;
+                default:
+                    alert("Mês inválido.");
+                    throw new Error("Mês inválido");
+            }
+            break;
+
+        case "norte":
+            switch (mes) {
+                case "dezembro":
+                case "janeiro":
+                case "fevereiro":
+                    estacao = "Inverno";
+                    break;
+                case "março":
+                case "abril":
+                case "maio":
+                    estacao = "Primavera";
+                    break;
+                case "junho":
+                case "julho":
+                case "agosto":
+                    estacao = "Verão";
+                    break;
+                case "setembro":
+                case "outubro":
+                case "novembro":
+                    estacao = "Outono";
+                    break;
+                default:
+                    alert("Mês inválido.");
+                    throw new Error("Mês inválido");
+            }
+            break;
+
+        default:
+            alert("Hemisfério inválido. Use 'norte' ou 'sul'.");
+            throw new Error("Hemisfério inválido");
+    }
+
+    alert(`No hemisfério ${hemisferio}, no mês de ${mes}, a estação é: ${estacao}.`);
+</script>

@@ -1,0 +1,75 @@
+// Faça um script que faça 5 perguntas para uma pessoa sobre um crime. As perguntas são:
+// - "Telefonou para a vítima?"
+// - "Esteve no local do crime?"
+// - "Mora perto da vítima?"
+// - "Devia para a vítima?"
+// - "Já trabalhou com a vítima?"
+
+// O script deve no final emitir uma classificação sobre a participação da pessoa no crime, conforme a tabela abaixo. Se a pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 como "Cúmplice" e 5 como "Assassino". Caso contrário, ele será classificado como "Inocente".
+// | Respostas Positivas | Resultado |
+// | --- | --- |
+// | 0-1 Resposta | Inocente! |
+// | 2 Respostas | Suspeito(a)! |
+// | 3-4 Respostas | Cúmplice! |
+// | 5 Respostas | Assassino(a)! |
+
+<meta charset="UTF-8">
+<script>
+    let pontos = 0;
+
+    let telefonou = Number(prompt("Telefonou para a vítima? (1 - Sim / 0 - Não)"));
+    let esteveLocal = Number(prompt("Esteve no local do crime? (1 - Sim / 0 - Não)"));
+    let moraPerto = Number(prompt("Mora perto da vítima? (1 - Sim / 0 - Não)"));
+    let devia = Number(prompt("Devia para a vítima? (1 - Sim / 0 - Não)"));
+    let trabalhou = Number(prompt("Já trabalhou com a vítima? (1 - Sim / 0 - Não)"));
+
+    switch (telefonou) {
+        case 1:
+            pontos++;
+            break;
+    }
+
+    switch (esteveLocal) {
+        case 1:
+            pontos++;
+            break;
+    }
+
+    switch (moraPerto) {
+        case 1:
+            pontos++;
+            break;
+    }
+
+    switch (devia) {
+        case 1:
+            pontos++;
+            break;
+    }
+
+    switch (trabalhou) {
+        case 1:
+            pontos++;
+            break;
+    }
+
+    let classificacao = "";
+
+    switch (pontos) {
+        case 2:
+            classificacao = "Suspeito(a)!";
+            break;
+        case 3:
+        case 4:
+            classificacao = "Cúmplice!";
+            break;
+        case 5:
+            classificacao = "Assassino(a)!";
+            break;
+        default:
+            classificacao = "Inocente!";
+            break;
+    }
+
+    alert(`Classificação final: ${classificacao}`);
+</script>
