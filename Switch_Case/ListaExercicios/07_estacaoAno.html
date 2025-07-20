@@ -33,7 +33,6 @@
                     break;
                 default:
                     alert("Mês inválido.");
-                    throw new Error("Mês inválido");
             }
             break;
 
@@ -61,13 +60,11 @@
                     break;
                 default:
                     alert("Mês inválido.");
-                    throw new Error("Mês inválido");
             }
             break;
 
         default:
             alert("Hemisfério inválido. Use 'norte' ou 'sul'.");
-            throw new Error("Hemisfério inválido");
     }
 
     alert(`No hemisfério ${hemisferio}, no mês de ${mes}, a estação é: ${estacao}.`);
