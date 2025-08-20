@@ -7,8 +7,16 @@
     */
 
     //ENTRADA
-
+    const numero1 = Number(prompt("Informe o Primeiro número"))
+    const numero2 = Number(prompt("Informe o Segundo número"))
     //PROCESSAMENTO
+    let numeros = []
+    if (numero1 > numero2) {
+        numeros = [numero2, numero1]
+    } else {
+        numeros = [numero1, numero2]
+    }
+    alert(numeros.join(' - '))
 
     //SAÍDA
 
