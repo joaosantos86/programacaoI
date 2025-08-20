@@ -11,7 +11,20 @@
     */
 
     //ENTRADA
+        //frutas
+    const fruta1 = prompt("Informe a primeira fruta").toLowerCase().trim();
+    const fruta2 = prompt("Informe a segunda fruta").toLowerCase().trim();
+    const fruta3 = prompt("Informe a terceira fruta").toLowerCase().trim();
+    //bebidas
+    const bebida1  = prompt("Agora, informe a primeira bebida").toLowerCase().trim();
+    const bebida2 = prompt("Informe a segunda bebida").toLowerCase().trim();
+    const bebida3 = prompt("Informe a terceira bebida").toLowerCase().trim()
+    let arrayFrutas = [fruta1, fruta2, fruta3]
+    let arrayBebidas = [bebida1, bebida2, bebida3]
 
+    document.write(`As frutas a serem compradas são: ${arrayFrutas.join(", ")}.<br>`);
+    document.write(`As bebidas a serem compradas são: ${arrayBebidas.join(", ")}.<br>`);
+    document.write(`A lista completa de compras é: ${arrayFrutas.concat(arrayBebidas).join(", ")}.`);
 
     //PROCESSAMENTO
 
