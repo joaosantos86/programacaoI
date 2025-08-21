@@ -10,9 +10,19 @@
 
     //ENTRADA
 
+    const palavra = prompt(`Digite UMA palavra`);
+    const letra = prompt(`Digite a letra que gostaria de encontrar na palavra anterior`);
 
     //PROCESSAMENTO
 
+    palavra.search(`${letra}`) +1;
+    const achei = palavra.search(`${letra}`) +1;
+
+    if(achei >=0) {
+        alert(`A letra desejada existe! Ela está na posição ${achei}`);
+    } else {
+        alert(`A sua letra não foi encontrada!`);
+    }
 
     //SAÍDA
 
