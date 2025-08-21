@@ -14,9 +14,18 @@
 
     //ENTRADA
 
+    const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+    const cor = prompt(`Informe uma cor`);
 
     //PROCESSAMENTO
 
+    const circle = Math.floor(Math.random() * 7);
+
+    if (cor == nomeCores[circle]) {
+        alert(`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${cor}!`);
+    } else {
+        alert(`NÃO FOI DESSA VEZ... TENTE NOVAMENTE!`);
+    }
 
     //SAÍDA
 
