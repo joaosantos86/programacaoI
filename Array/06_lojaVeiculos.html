@@ -14,10 +14,42 @@
 
     //ENTRADA
 
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+
+    const carro1 = prompt(`Selecione o primeiro veículo`);
+    const carro2 = prompt(`Selecione o segundo veículo`);
+    const carro3 = prompt(`Selecione o terceiro veículo`);
+    const oq1 = prompt(`Seu primeiro carro é SUV, Sedan ou Hatch`);
+    const oq2 = prompt(`Seu segundo carro é SUV, Sedan ou Hatch`);
+    const oq3 = prompt(`Seu terceiro carro é SUV, Sedan ou Hatch`);
 
     //PROCESSAMENTO
 
+    if (oq1 == "SUV") {
+        carrosSUV.push(`${carro1}`);
+    } else if (oq1 == "Sedan") {
+        cassosSedan.push(`${carro1}`);
+    } else if (oq1 == "Hatch") {
+        carrosHatch.push(`${carro1}`);
+    } 
+    if (oq2 == "SUV") {
+        carrosSUV.push(`${carro2}`);
+    } else if (oq2 == "Sedan") {
+        cassosSedan.push(`${carro2}`);
+    } else if (oq2 == "Hatch") {
+        carrosHatch.push(`${carro2}`);
+    } 
+    if (oq3 == "SUV") {
+        carrosSUV.push(`${carro3}`);
+    } else if (oq3 == "Sedan") {
+        cassosSedan.push(`${carro3}`);
+    } else if (oq3 == "Hatch") {
+        carrosHatch.push(`${carro3}`);
+    }
 
     //SAÍDA
 
+    document.write(`A lista de carros SUV: ${carrosSUV.join(` , `)} <br> A lista de carros Sedan: ${cassosSedan.join(` , `)} <br> A lista de carros Hatch: ${carrosHatch.join(` , `)} `);
 </script>
