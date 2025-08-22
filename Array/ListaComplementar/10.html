@@ -1,0 +1,43 @@
+<script>
+    /*
+    PROBLEMA: Controle de Estoque Interativo
+    Cenário: Você trabalha em uma loja de poções mágicas. Um cliente comprou o último "Elixir da Coragem" e você precisa removê-lo do sistema de inventário.
+
+    Array Inicial:
+    let inventarioMagico = ["Poção de Cura", "Elixir da Coragem", "Antídoto Universal", "Gás do Sono"];
+    Entrada do Usuário: O programa deve solicitar o nome do item que foi vendido e precisa ser removido.
+
+    Sua Tarefa:
+    Crie uma variável itemVendido para armazenar o nome do item informado.
+    Primeiro, encontre o índice (a posição) do itemVendido no array inventarioMagico.
+    Se o item for encontrado, use seu índice para removê-lo do array.
+    Exiba o inventário atualizado. Se o item não existir, exiba uma mensagem de erro.
+    Exemplo de Entrada do Usuário: Elixir da Coragem
+
+    Resultado esperado:
+    Item 'Elixir da Coragem' removido do estoque.
+    Inventário atual: Poção de Cura, Antídoto Universal, Gás do Sono
+    Exemplo de Entrada do Usuário: Capa da Invisibilidade
+
+    Resultado esperado:
+    Erro: Item 'Capa da Invisibilidade' não encontrado no estoque.
+    */
+
+    //ENTRADA
+    let inventarioMagico = ["Poção de Cura", "Elixir da Coragem", "Antídoto Universal", "Gás do Sono"];
+    let itemVendido = prompt("Informe o item que foi vendido")
+
+
+    //PROCESSAMENTO
+    let indice = inventarioMagico.indexOf(itemVendido)
+
+    //SAÍDA
+    if (indice == ! -1) {
+        inventarioMagico.splice(indice, 1)
+        document.write("Item " + itemVendido + " removido do estoque <br>");
+        document.write("Inventário atual: " + inventarioMagico.join(", "))
+        document.write(" <br> Exemplo de Entrada do Usuário: " + itemVendido)
+    } else {
+        alert("Erro: Item " + itemVendido + " não encontrado no estoque.")
+    }
+</script>
