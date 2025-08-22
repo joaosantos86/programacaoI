@@ -23,9 +23,9 @@
     const publica = codigosDeAcesso.slice(1, 4);
     let codigosAtualizados = [...codigosDeAcesso];
     codigosAtualizados.splice(2, 1, "Sigma-5"); 
-    document.write("Lista Original: " + codigosDeAcesso + "<br>");
-    document.write("Lista Pública: " + publica + "<br>");
-    document.write("Lista Atualizada: " + codigosAtualizados + "<br>");
+    document.write("Lista Original: " + codigosDeAcesso.join(", ") + "<br>");
+    document.write("Lista Pública: " + publica.join(", ") + "<br>");
+    document.write("Lista Atualizada: " + codigosAtualizados.join(", "));
 
 
 
