@@ -1,0 +1,35 @@
+<script>
+    /*
+    PROBLEMA: Substituição Tática no Time
+    Cenário: Você é o técnico de um time de e-sports. Durante uma partida, você precisa fazer uma substituição: tirar um jogador e colocar outro no lugar.
+
+    Array Inicial:
+    let timeTitular = ["Phoenix", "Jett", "Sova", "Sage", "Cypher"];
+    Entradas do Usuário: O programa deve solicitar duas informações: o nome do jogador que vai sair e o nome do jogador que vai entrar.
+
+    Sua Tarefa:
+    Crie duas variáveis: jogadorSai e jogadorEntra.
+    Encontre o índice do jogadorSai no array timeTitular.
+    Use um único método de array para remover o jogadorSai e, na mesma posição, adicionar o jogadorEntra.
+    Exiba a escalação final do time.
+    */
+
+    //ENTRADA
+    let timeTitular = ["Phoenix", "Jett", "Sova", "Sage", "Cypher"];
+    let jogadorSai = prompt("Informe o jogador que vai sair")
+    let jogadorEntra = prompt("Informe o jogador que vai entrar")
+
+
+
+
+    //PROCESSAMENTO
+
+    let posicao = timeTitular.indexOf(jogadorSai)
+    //SAÍDA     
+    if (posicao == ! -1) {
+        timeTitular.splice(posicao, 1, jogadorEntra)
+        alert("O time titular agora é: " + timeTitular)
+    } else {
+        alert("O jogador que vai sair não foi encontrado")
+    }
+</script>
