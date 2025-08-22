@@ -1,0 +1,30 @@
+<script>
+    /*
+    PROBLEMA: Validador de Lista de Convidados
+    Cenário: Você está na portaria de um evento exclusivo e precisa verificar se o nome de uma pessoa que acabou de chegar está na lista de convidados.
+
+    Array Inicial:
+    const convidadosVIP = ["Angela", "Ricardo", "Julia", "Marcos", "Fernanda"];
+    Entrada do Usuário: O programa deve solicitar ao usuário que digite o nome que deseja verificar.
+
+    Sua Tarefa:
+    Crie uma variável nomeConvidado e armazene nela o nome fornecido pelo usuário.
+    Utilize um método de array para verificar se o nomeConvidado existe no array convidadosVIP.
+    Exiba uma mensagem no console: "Acesso liberado!" se o nome estiver na lista, ou "Acesso negado." se não estiver.
+    */
+
+    //ENTRADA
+    const convidadosVIP = ["Angela", "Ricardo", "Julia", "Marcos", "Fernanda"];
+    const nomeConvidado = prompt("Informe seu nome")
+
+    //PROCESSAMENTO
+    const verificar = convidadosVIP.indexOf(nomeConvidado)
+
+
+    //SAÍDA
+    if (verificar ==! -1) {
+        alert("Acesso Liberado")
+    } else {
+        alert("Acesso negado")
+    }
+</script>
