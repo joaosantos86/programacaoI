@@ -1,0 +1,32 @@
+<script>
+    /*
+    PROBLEMA: Ingrediente Secreto
+    Você está criando uma receita e precisa verificar duas coisas: se um "Ingrediente Secreto" está na sua lista de ingredientes e, se estiver, qual a sua posição para que você possa adicioná-lo no momento certo.
+
+    Tarefa:
+    Comece com o array: let ingredientes = ["Farinha", "Açúcar", "Ovos", "Sal", "Chocolate"];
+    Pergunte para o usuário se existe algum ingrediente secreto e qual é o ingrediente secreto.
+    Crie uma variável chamada posicaoIngrediente que identifique e armazene a posição) do Ingrediente Secreto no array, segundo o ingrediente informado pelo usuário (caso exista).
+    Resultado esperado:
+
+    A receita contém o Ingrediente Secreto? SIM/NÃO
+    Posição do Ingrediente Secreto: POSIÇÃO DO INGREDIENTE NO ARRAY
+
+    */
+
+    //ENTRADA
+    let ingredientes = ["farinha", "açúcar", "ovos", "sal", "chocolate"]
+    let ingredienteSecreto = prompt("Existe algum ingrediente secreto? se sim, informe qual :").toLowerCase().trim()
+    let posicaoIngrediente = ingredientes.indexOf(ingredienteSecreto)
+    //PROCESSAMENTO
+    if (posicaoIngrediente !== -1) {
+        document.write("A receita contém o Ingrediente Secreto? SIM<br>");
+        document.write("Posição do Ingrediente Secreto: " + posicaoIngrediente);
+    } else {
+        document.write("A receita contém o Ingrediente Secreto? NÃO<br>");
+        document.write("Posição do Ingrediente Secreto: não encontrado");
+    }
+
+    //SAÍDA
+
+</script>
