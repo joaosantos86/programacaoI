@@ -15,8 +15,18 @@
     */
 
     //ENTRADA
-    const etapasLoteA = ["Corte", "Montagem", "Pintura", "Verificação de Qualidade", "Embalagem"];
-    let quantidadeDeEtapas = Number(prompt("Informe a quantidade de etapas do processo produtivo"));
+ const etapasLoteA = ["Corte", "Montagem", "Pintura", "Verificação de Qualidade", "Embalagem"];
+    const quantidadeEtapas = prompt("Informe a quantidade de etapas do processo produtivo:  ");
+    const todasEtapas = etapasLoteA.slice(0, etapasLoteA.length);
+    const qualidadeEtapa = etapasLoteA.slice(3, 4);
+    const validacoes = [todasEtapas.length == quantidadeEtapas].concat(qualidadeEtapa[0] === "Verificação de Qualidade");
+    const loteAprovado = validacoes[0] && validacoes[1];
+
+    if (loteAprovado) {
+        alert("O lote foi aprovado? SIM");
+    } else {
+        alert("O lote foi aprovado? NÃO");
+    }
      
 
     //PROCESSAMENTO
