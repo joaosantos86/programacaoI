@@ -13,8 +13,9 @@
     for (let nrs of listaDeNumeros) {
         if (nrs % 2 == 0) {
             listaNovo.push(nrs);
-            document.write(`<li>${nrs}</li>`)
         }
     }
-
+    listaNovo.sort((x, y) => x - y);
+    document.write(`<ul><li>${listaNovo.join("</li><li>")}</li></ul>`);
+    
 </script>
