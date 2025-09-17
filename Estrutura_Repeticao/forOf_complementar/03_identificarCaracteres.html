@@ -4,21 +4,28 @@
     Peça para o usuário informar uma palavra. Após, identifique a quantidade de vogais e de consoantes que existem na palavra informada pelo usuário.
     Apresente as quantidades no final do programa.
     */
-    
+
     //Entrada
     let vogais = ["A", "E", "I", "O", "U"]
     let palavra = prompt("Informe a sua palavra").toUpperCase().trim()
-    let palavraSoletrada = []
-    let quantidadeVogais = []
-    palavra.from(palavraSoletrada)
+    let palavraSoletrada = Array.from(palavra)
+    let vogaisda = []
+    let consoantes = []
+    let qntCons = []
+    let qntVog = []
+
     //Processamento
-    for (let letras of palavraSoletrada) {
-        for (let quantidade of vogais){
-            if (palavraSoletrada.includes(vogais))
-            letras.push(quantidadeVogais)
+    for (let letra of palavraSoletrada) {
+        if (vogais.includes(letra)) {
+            vogaisda.push(letra);
+        } else {
+            consoantes.push(letra)
         }
     }
 
+    qntCons = consoantes.length
+    qntVog = vogaisda.length
+
     //Saída
-    alert(quantidadeVogais)
+    alert(`A quantidade de vogais é: ${qntVog}` + `\nA quantidade de consoantes é: ${qntCons}` )
 </script>
