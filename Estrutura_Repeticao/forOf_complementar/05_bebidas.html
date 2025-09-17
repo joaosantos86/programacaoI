@@ -1,0 +1,27 @@
+<script>
+    //Problema: Separar Bebidas
+    /*
+    Considere a seguinte lista de bebidas:
+    let bebidas = ["Cerveja", "Vinho", "Suco Natural", "Tequila", "Água", "Refrigerante", "Vodka"];
+    Pergunte para o usuário qual das bebidas que possui álcool (leia bebida por bebida do Array) e apresente apenas as bebidas permitidas para menores de 18 anos, ou seja, que não possuem álcool.
+    */
+
+    //Entrada
+    let bebidas = ["Cerveja", "Vinho", "Suco Natural", "Tequila", "Água", "Refrigerante", "Vodka"];
+    let bebidasSemAlcool = [];
+    let bebidasComAlcool = [];
+
+    //Processamento
+    for (let ler of bebidas) {
+        let pergunte = prompt(`${ler} Essa bebida tem álcool? S-Sim N-Não`).toUpperCase().trim()
+        if (pergunte == "N") {
+            bebidasSemAlcool.push(ler)
+        } else {
+            bebidasComAlcool.push(ler)
+
+        }
+    }
+
+    //Saída
+    alert( `As bebidas sem álcool são:\n${bebidasSemAlcool.join("\n")}` +  `\nE as bebidas com álcool são:\n${bebidasComAlcool.join("\n")}`)
+</script>
