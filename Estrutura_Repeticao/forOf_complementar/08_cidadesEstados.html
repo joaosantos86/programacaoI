@@ -8,11 +8,28 @@
     */
 
     //Entrada
-
+    let cidades = ["Porto Alegre", "Curitiba", "Florianópolis", "Joinville", "Blumenau", "Gramado", "Santa Maria", "Londrina", "Itajaí"];
+    let sc = [];
+    let rs = [];
+    let pr = [];
+    let qntSc = sc.length
+    
 
     //Processamento
+    for (estados of cidades) {
+        let pergunta = prompt(`${estados} Informe o estado dessa cidade- Santa Catarina - SC, Parana - PR ou Rio Grande do Sul - RS`).trim().toUpperCase()
+        if(pergunta == "SC" || pergunta == "SANTA CATARINA") {
+            sc.push(estados)
+        } else if(pergunta == "RS" || pergunta == "RIO GRANDE DO SUL") {
+            rs.push(estados)
+        } else if ((pergunta == "PR" || pergunta == "PARANA")) {
+            pr.push(estados)
+        } else {
+            alert("Insira um estado válido, USUARIO.")
+        }
+    }
 
-
+    alert(qntSc)
     //Saída
 
 </script>
