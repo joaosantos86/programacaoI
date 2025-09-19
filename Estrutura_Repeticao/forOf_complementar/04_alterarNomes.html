@@ -6,17 +6,31 @@
     Verifique se esses nomes contém letras com acento agudo e substitua por letras sem acento agudo.
     Apresente a lista corrigida ao final do programa.
     */
-
     //Entrada
     let nomes = ["Hilário", "Rafaela", "José", "Bárbara", "Fábio", "Júlia"];
-    let vogais = ["á", "é", "í", "ó", "ú" ]    
+    let nomesCorrigidos = [];
+
     
-
-
     //Processamento
+    for (let nome of nomes) {
 
+        let semAcento = nome;
+        semAcento = semAcento.replace("á", "a");
+        semAcento = semAcento.replace("Á", "A");
+        semAcento = semAcento.replace("é", "e");
+        semAcento = semAcento.replace("É", "E");
+        semAcento = semAcento.replace("í", "i");
+        semAcento = semAcento.replace("Í", "I");
+        semAcento = semAcento.replace("ó", "o");
+        semAcento = semAcento.replace("Ó", "O");
+        semAcento = semAcento.replace("ú", "u");
+        semAcento = semAcento.replace("Ú", "U");
+
+   
+        nomesCorrigidos.push(semAcento);
+    }
 
     //Saída
-    alert()
+    alert("Nomes sem acento: " + nomesCorrigidos.join(", "));
 
 </script>

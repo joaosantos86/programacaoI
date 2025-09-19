@@ -7,29 +7,63 @@
     No final do programa apresente os estados com as suas respectivas cidades. Porém, ordene a apresentação das listas, apresentando de forma decrescente pela quantidade de cidades que o estado possui.
     */
 
-    //Entrada
-    let cidades = ["Porto Alegre", "Curitiba", "Florianópolis", "Joinville", "Blumenau", "Gramado", "Santa Maria", "Londrina", "Itajaí"];
+    // Entrada
+    let cidades = [
+        "Porto Alegre", "Curitiba", "Florianópolis",
+        "Joinville", "Blumenau", "Gramado",
+        "Santa Maria", "Londrina", "Itajaí"
+    ];
+
     let sc = [];
     let rs = [];
     let pr = [];
-    let qntSc = sc.length
-    
 
-    //Processamento
-    for (estados of cidades) {
-        let pergunta = prompt(`${estados} Informe o estado dessa cidade- Santa Catarina - SC, Parana - PR ou Rio Grande do Sul - RS`).trim().toUpperCase()
-        if(pergunta == "SC" || pergunta == "SANTA CATARINA") {
-            sc.push(estados)
-        } else if(pergunta == "RS" || pergunta == "RIO GRANDE DO SUL") {
-            rs.push(estados)
-        } else if ((pergunta == "PR" || pergunta == "PARANA")) {
-            pr.push(estados)
+    // Processamento
+    for (let cidade of cidades) {
+        let resposta = prompt("Qual o estado de " + cidade + "? (SC, PR, RS)").toUpperCase();
+
+        if (resposta == "SC") {
+            sc.push(cidade);
+        } else if (resposta == "RS") {
+            rs.push(cidade);
+        } else if (resposta == "PR") {
+            pr.push(cidade);
         } else {
-            alert("Insira um estado válido, USUARIO.")
+            alert("Estado inválido, vamos pular essa cidade.");
         }
     }
 
-    alert(qntSc)
+    let resultado = "";
+
+    if (sc.length >= rs.length && sc.length >= pr.length) {
+        resultado += "Santa Catarina: " + sc.join(", ") + "\n";
+        if (rs.length >= pr.length) {
+            resultado += "Rio Grande do Sul: " + rs.join(", ") + "\n";
+            resultado += "Paraná: " + pr.join(", ");
+        } else {
+            resultado += "Paraná: " + pr.join(", ") + "\n";
+            resultado += "Rio Grande do Sul: " + rs.join(", ");
+        }
+    } else if (rs.length >= sc.length && rs.length >= pr.length) {
+        resultado += "Rio Grande do Sul: " + rs.join(", ") + "\n";
+        if (sc.length >= pr.length) {
+            resultado += "Santa Catarina: " + sc.join(", ") + "\n";
+            resultado += "Paraná: " + pr.join(", ");
+        } else {
+            resultado += "Paraná: " + pr.join(", ") + "\n";
+            resultado += "Santa Catarina: " + sc.join(", ");
+        }
+    } else {
+        resultado += "Paraná: " + pr.join(", ") + "\n";
+        if (sc.length >= rs.length) {
+            resultado += "Santa Catarina: " + sc.join(", ") + "\n";
+            resultado += "Rio Grande do Sul: " + rs.join(", ");
+        } else {
+            resultado += "Rio Grande do Sul: " + rs.join(", ") + "\n";
+            resultado += "Santa Catarina: " + sc.join(", ");
+        }
+    }
+    alert(resultado);
     //Saída
 
 </script>
