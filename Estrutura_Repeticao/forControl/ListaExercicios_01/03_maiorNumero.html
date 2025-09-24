@@ -7,18 +7,18 @@
     */
 
     //ENTRADA
-    let cardinais = ["primeiro" , "segundo" , "terceiro", "quarto", "quinto"]
+    let cardinais = ["primeiro", "segundo", "terceiro", "quarto", "quinto"]
     let totalNrs = [];
-    for (let posicao = 0; posicao < 5; posicao++){
-        let informar =  Number(prompt("Informe o " + cardinais[posicao] + " número"))
+
+
+
+    //PROCESSAMENTO
+    for (let posicao = 0; posicao < 5; posicao++) {
+        let informar = Number(prompt("Informe o " + cardinais[posicao] + " número"))
         totalNrs.push(informar)
     }
-    let ordernarNumeros = totalNrs.sort((a,b) => b -a)
-alert(ordernarNumeros[0])
-    
-    //PROCESSAMENTO
-
+    let ordernarNumeros = totalNrs.sort((a, b) => b - a)
     
     //SAÍDA
-
+    alert(ordernarNumeros[0])
 </script>
