@@ -10,11 +10,26 @@
     */
 
     //ENTRADA
-
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let minusculas = listaDeLetras.map(l => l .toLowerCase()) //deixar minusculo
+    let jaVi = [];
+    let  rept = []
     
     //PROCESSAMENTO
-
+    for ( let comecar = 0; comecar < listaDeLetras.length; comecar++) {
+        let letra = minusculas[comecar];
+        if(jaVi.includes(letra)) {
+            if (!rept.includes(letra)){
+                    rept.push(letra)
+            }
+        
+    }
+     else {
+        jaVi.push(letra)
+    }
+        }
+    rept.sort()
     
     //SAÍDA
-
+alert(rept)
 </script>
