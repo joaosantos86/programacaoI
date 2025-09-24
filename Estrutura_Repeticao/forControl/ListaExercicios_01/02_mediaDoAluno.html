@@ -8,18 +8,18 @@
 
     //ENTRADA
     const qntNotas = Number(prompt("Quantas notas o aluno obteve?"))
-    let cardinais = [qntNotas - qntNotas +1]; 
-    let media =0;
-    for(let posicao = 0; posicao < qntNotas; posicao++) {
+    let cardinais = [qntNotas - qntNotas + 1]; //vai servir pra informar qual é primeira, segunda nota....
+    let media = 0;
+    for (let posicao = 0; posicao < qntNotas; posicao++) {
         let nota = Number(prompt("Informe a " + cardinais++ + "º nota: "))
-        media +=nota
+        media += nota
     }
 
 
 
     //PROCESSAMENTO
-    media /= qntNotas 
+    media /= qntNotas
 
     //SAÍDA
-    alert(media)
+    alert(media) 
 </script>
