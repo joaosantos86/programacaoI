@@ -4,13 +4,18 @@
     PROBLEMA: ÍMPARES ATÉ 50
     Faça um programa que apresente na tela os números ímpares de 1 até 50.
     */
-
+    let cinquenta = 50;
+    let numerosImpares = [];
     //ENTRADA
-
-
+    for(initalValue = 0; initalValue < cinquenta; initalValue++) {
+        if (i % 2 !== 0){
+            numerosImpares.push(i)
+        }
+    }
     //PROCESSAMENTO
 
 
     //SAÍDA
+    document.write(numerosImpares.join(", "))
 
 </script>
