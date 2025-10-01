@@ -6,11 +6,26 @@
     */
 
     //ENTRADA
-
-    
+    let initialValue = Number(prompt("Informe a o valor inicial"))
+    let finalValue = Number(prompt("Informe o valor final"))
+    let numerosPares = [];
+    let numerosImpares = [];
     //PROCESSAMENTO
+    if (initialValue < finalValue) {
+        for (i = initialValue; i < finalValue; i++){
+            if (i % 2 === 0) {
+                numerosPares.push(i)
+            } else if (i % 2 !== 0){
+                numerosImpares.push(i)
+            }
+        }
+    } else {
+        alert("O valor inicial tem que ser menor que o valor final")
+    }
 
     
     //SAÍDA
+    document.write(`Os números pares entre o seu valor inicial e valor final é: ${numerosPares.join(", ")} <br> E os impares são: ${numerosImpares.join(", ")}`)
+
 
 </script>
