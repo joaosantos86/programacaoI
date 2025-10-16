@@ -1,0 +1,11 @@
+<script>
+    const numero = Number(prompt("Informe seu número"))
+    let resultado = 1;
+    function numeroFatorial(numero) {
+        for(let i = numero; i > 1; i--){
+            resultado = resultado * i
+        }
+        return resultado
+    }
+    alert(numeroFatorial(numero))
+</script>

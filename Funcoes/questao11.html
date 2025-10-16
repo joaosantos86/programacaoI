@@ -1,0 +1,17 @@
+<script>
+    const numero = Number(prompt(`digite um numero`))
+    function primo(numero) {
+        if (numero <= 1) {
+            return "seu numero não é primo"
+        }
+        for (let i = numero - 1; i > 1; i--) {
+            if (numero % i == 0) {
+                return "seu numero não é primo"
+            }
+        }
+        return "seu numero é primo"
+    }
+    let resultado = primo(numero);
+    alert(resultado)
+
+</script>

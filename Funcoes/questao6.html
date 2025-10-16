@@ -1,0 +1,14 @@
+<script>
+    let raio = Number(prompt("Informe o raio do circulo"))
+    const pi = 3.14
+    function calcularArea(raio, pi) {
+        return pi * raio**2
+    }
+    function calcularPerimetro(raio, pi) {
+        return 2 * pi * raio
+    }
+    let resultadoRaio = calcularPerimetro(raio, pi)
+    let resultadoArea = calcularArea(raio, pi)
+
+    alert(`O perimetro é: ${resultadoRaio} \n A area é ${resultadoArea}`)
+</script>

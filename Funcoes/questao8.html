@@ -1,0 +1,8 @@
+<script>
+    let peso = Number(prompt("Informe seu peso"))
+    let altura = Number(prompt("Informe sua altura"))
+    function calcularIMC(peso, altura){
+        return peso / altura ** 2 
+    }
+    alert(`Seu imc é ${calcularIMC(peso, altura).toFixed(2).replace(".", ",")}`)
+</script>

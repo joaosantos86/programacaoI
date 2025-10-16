@@ -1,0 +1,16 @@
+<script>
+    let palavra = prompt("Informe sua string").toUpperCase();
+    let vogais = [];
+
+    function contarVogais(palavra) {
+        for (let letra of palavra) {
+            if (letra === "A" || letra === "E" || letra === "I" || letra === "O" || letra === "U") {
+                vogais.push(letra);
+            }
+        }
+    }
+
+    let resultado = contarVogais(palavra)
+    let qtd = vogais.length
+    alert(qtd)
+</script>

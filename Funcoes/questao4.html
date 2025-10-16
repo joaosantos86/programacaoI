@@ -1,0 +1,8 @@
+<script>
+    let temp = Number(prompt("Informe a temperatura que deseja converter"))
+    function converterFahrenheit(temp) {
+       return (temp - 32) * 5 / 9
+    }
+    const resultado = converterFahrenheit(temp)
+    alert(resultado.toFixed(2).replace(".", ","))
+</script>

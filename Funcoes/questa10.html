@@ -1,0 +1,18 @@
+<script>
+    const frase = prompt("Informe sua frase").trim().toUpperCase();
+    const letra = prompt("Informe sua letra").trim().toUpperCase();
+    let letrasReps = [];
+
+    function contarLetra(frase, letra) {
+        for (let verificar of frase) {
+            if (verificar === letra) {
+                letrasReps.push(verificar)
+            }
+        }
+    }
+
+    let resultado = contarLetra(frase, letra)
+
+    alert(letrasReps.length)
+
+</script>
