@@ -7,12 +7,36 @@
     Desenvolva um programa que armazene o voto de cada aluno da sala e apresente o resultado da votação, com o quantitativo de votos e também a porcentagem de votos de cada candidato a representante de sala.
     */
 
-    //ENTRADA
+    // ENTRADA
+    let candidato1 = prompt("Informe o nome do primeiro candidato:");
+    let votos1 = 0;
+    let candidato2 = prompt("Informe o nome do segundo candidato:");
+    let votos2 = 0;
+    let candidato3 = prompt("Informe o nome do terceiro candidato:");
+    let votos3 = 0;
+    let alunosVotantes = Number(prompt("Informe a quantidade de alunos votantes:"));
 
+    // PROCESSAMENTO
+    for (let i = 0; i < alunosVotantes; i++) {
+    let voto = Number(prompt(`Escolhe um cadidato de acordo com seu respctivo número \n 1 - ${candidato1} \n 2 - ${candidato2} \n 3 - ${candidato3}`))
 
-    //PROCESSAMENTO
+        if (voto === 1) {
+            votos1++;
+        } else if (voto === 2) {
+            votos2++;
+        } else if (voto === 3) {
+            votos3++;
+        } else {
+            alert("Voto invalido");
+        }
+    }
+    let totalVotos = votos1 + votos2 + votos3;
+    let perc1 = (votos1 / totalVotos * 100).toFixed(1);
+    let perc2 = (votos2 / totalVotos * 100).toFixed(1);
+    let perc3 = (votos3 / totalVotos * 100).toFixed(1);
 
-
-    //SAÍDA
-
+    // SAÍDA
+    document.write(`${candidato1}: ${votos1} votos ${perc1}%<br>`);
+    document.write(`${candidato2}: ${votos2} votos ${perc2}%<br>`);
+    document.write(`${candidato3}: ${votos3} votos ${perc3}%<br>`);
 </script>
