@@ -1,0 +1,41 @@
+<script>
+    //PROBLEMA
+    /*
+    Peça para o feirante informar a quantia de itens que foram vendidos de cada produto.
+    Considere que os itens que comercializa e os seus respectivos preços, são:
+    - Tomate: R$ 3,90 (Kg)
+    - Batata: R$ 3,40 (Kg)
+    - Batata-Doce: R$ 4,70 (Kg)
+    - Alface: R$ 1,50 (Und)
+    - Cebola: R$ 2,90 (Kg)
+    - Cebolinha: R$ 1,40 (Und)
+    - Beterraba: R$ 4,10 (Kg)
+
+    Após o usuário informar a quantia vendida para cada item, calcule e apresente o faturamento do feirante.
+    */
+
+    //ENTRADA
+    let produtos = [
+        {name: 'Tomates', preco: 3.9, tipo: 'quantos kg'},
+        {name: 'Batatas', preco: 3.4, tipo: 'quantos kg'},
+        {name: 'Batatas Doce', preco: 4.7, tipo: 'quantos kg'},
+        {name: 'Alfaces', preco: 1.5, tipo: 'quantas unidades'},
+        {name: 'Cebolas', preco: 2.9, tipo: 'quantos kg'},
+        {name: 'Cebolinhas', preco: 1.4, tipo: 'quantas unidades'},
+        {name: 'Beterrabas', preco: 4.1, tipo: 'quantos kg'},
+    ]
+
+    let somaFinal = 0;
+    for (let produto of produtos) {
+        let quantidade =  Number(prompt(`Informe ${produto.tipo} de ${produto.name} o Sr. Vendeu`));
+        somaFinal += quantidade * produto.preco;
+    }
+    alert(`O seu faturamento foi R$ ${somaFinal.toFixed(2).replace('.', ',')}`)
+
+    
+    //PROCESSAMENTO
+    //tirar duvida com professor
+    
+    //SAÍDA
+    
+</script>
