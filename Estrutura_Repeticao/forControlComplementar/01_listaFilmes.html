@@ -1,26 +1,46 @@
 <script>
-    //PROBLEMA
+    // PROBLEMA
     /*
-    Peça para o feirante informar a quantia de itens que foram vendidos de cada produto.
-    Considere que os itens que comercializa e os seus respectivos preços, são:
-    - Tomate: R$ 3,90 (Kg)
-    - Batata: R$ 3,40 (Kg)
-    - Batata-Doce: R$ 4,70 (Kg)
-    - Alface: R$ 1,50 (Und)
-    - Cebola: R$ 2,90 (Kg)
-    - Cebolinha: R$ 1,40 (Und)
-    - Beterraba: R$ 4,10 (Kg)
-
-    Após o usuário informar a quantia vendida para cada item, calcule e apresente o faturamento do feirante.
+    Pergunte ao usuário quantos filmes deseja cadastrar.
+    Considere que os gêneros dos filmes que serão cadastrados serão Comédia, Drama e Romance.
+    Para cada filme que o usuário inserir, pergunte o gênero do filme e o adicione na lista correspondente.
+    Apresente os gêneros e os seus respectivos filmes, que foram informados pelo usuário.
+    ***Não apresente listas que não tiveram filme cadastrado.
     */
 
-    //ENTRADA
+    // ENTRADA
+    let filmes = [];
+    let qtdFilmes = Number(prompt('Informe quantos filmes deseja cadastrar:'));
 
+    for (let i = 0; i < qtdFilmes; i++) {
+        let filme = prompt(`Informe o nome do filme número ${i + 1}:`);
+        let genero = prompt(`Escolha o gênero do filme: \nComédia \nDrama \nRomance`).trim().toLowerCase();
+        filmes.push({ nome: filme, genero: genero });
+    }
 
-    
-    //PROCESSAMENTO
-    
-    
-    //SAÍDA
-    
+    // PROCESSAMENTO
+    let comedia = [];
+    let drama = [];
+    let romance = [];
+
+    for (let i of filmes) {
+        if (i.genero === 'comédia' || i.genero === 'comedia') {
+            comedia.push(i.nome);
+        } else if (i.genero === 'drama') {
+            drama.push(i.nome);
+        } else if (i.genero === 'romance') {
+            romance.push(i.nome);
+        }
+    }
+
+    // SAÍDA
+    if (comedia.length > 0) {
+        document.write(`Filmes de comedia: ${comedia.join(', ')}<br>`);
+    }
+    if (drama.length > 0) {
+        document.write(`Filmes de drama: ${drama.join(', ')}<br>`);
+    }
+    if (romance.length > 0) {
+        document.write(`Filmes de romance: ${romance.join(', ')}<br>`);
+    }
 </script>
