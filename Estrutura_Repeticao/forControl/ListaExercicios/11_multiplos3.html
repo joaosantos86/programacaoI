@@ -6,8 +6,10 @@
 
     //ENTRADA
     let somar = 0;
+    let nrs = [];
     for(let i = 1; i <= 100; i++) {
         if (i % 3 === 0) {
+            nrs.push(i)
             somar += i
         }
 
@@ -18,5 +20,6 @@
 
 
     //SAÍDA
-alert(`A soma dos multiplos é  ${somar}`)
+document.write(`A soma dos múltiplos é ${somar} <br>`)
+document.write(`Os múltiplos são: <br> ${nrs.join(`<br>`)}`)
 </script>

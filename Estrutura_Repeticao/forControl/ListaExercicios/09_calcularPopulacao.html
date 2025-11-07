@@ -11,19 +11,17 @@
     let populacao10anos = 0; 
     for (let i = 0; i <= 10; i++) {
         populacao *= 1.015
-        
-
         if (i === 5) {
-            populacao5anos = populacao
+            populacao5anos = Math.ceil(populacao)
         } else if (i === 10){
-            populacao10anos = populacao
+            populacao10anos = Math.ceil(populacao)
         }
     }
 
 
     //PROCESSAMENTO
-    document.write(`A população em 5 anos é: ${populacao5anos.toFixed(2)}<br>`)
-    document.write(`A população em 10 anos é: ${populacao10anos.toFixed(2)}`)
+    document.write(`A população em 5 anos é: ${populacao5anos}<br>`)
+    document.write(`A população em 10 anos é: ${populacao10anos}`)
 
     //SAÍDA
 

@@ -7,14 +7,18 @@
     //ENTRADA
     let investimento = 1000;
     let dias = 0;
+
     for (; investimento <= 2000; dias++) {
         investimento *= 1.02
     }
 
-
+    let semanas = dias / 7;
+    let uteis = Math.ceil(semanas * 5);
     //PROCESSAMENTO
 
 
     //SAÍDA
- alert(`Levará 36 dias uteis`)
+ alert(`Levará ${uteis} dias uteis`)
+
+ //CORRIGIR
 </script>
