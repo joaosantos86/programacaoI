@@ -7,9 +7,13 @@
 
     //ENTRADA
 
+    let nota = Number(prompt('Informe uma nota entre 0 e 10'));
+
 
     //PROCESSAMENTO
-
+    while(nota < 0 || nota > 10 ) {
+        nota = Number(prompt('Informe uma nota entre 0 e 10'));
+    }
 
     //SAÍDA
 
