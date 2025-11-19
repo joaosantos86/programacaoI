@@ -4,12 +4,25 @@
     O computador escolhe um número aleatório de 1 a 30, e o usuário precisa adivinhar. O programa dá dicas ("maior" ou "menor") até acertar.
     */
 
-    //ENTRADA
+     //ENTRADA
 
+    let numeroAleatorio = Math.floor(Math.random() * 30) + 1;
+    let pergunta;
 
     //PROCESSAMENTO
 
+    while(pergunta !== numeroAleatorio) {
+        pergunta = Number(prompt(`Tente advinhar o número que estou pensando :)`));
+        if (pergunta > numeroAleatorio) {
+            alert(`Menor :)`);
+        } else if (pergunta < numeroAleatorio) {
+            alert(`Maior :)`);
+        }
+    }
+
+    document.write(`Parabéns voce encontrou o número correto)`)
 
     //SAÍDA
+    
     
 </script>

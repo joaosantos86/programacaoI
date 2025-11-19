@@ -5,11 +5,17 @@
     */
     
     //ENTRADA
-
+    let pergunta;
+    let soma = 0;
 
     //PROCESSAMENTO
 
+    while (pergunta !== 0) { 
+        pergunta = Number(prompt(`Informe um número (0 para encerrar)`));
+        soma += pergunta;
+    }
 
     //SAÍDA
-    
+
+    alert(`A soma dos números é ${soma}`);
 </script>

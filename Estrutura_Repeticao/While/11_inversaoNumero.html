@@ -9,6 +9,15 @@
 
     //ENTRADA
 
+    let pergunta = Number(prompt(`Informe um número, por exemplo: 1234`));
+    let perguntaString = pergunta.toString()
+    let aoContrario = ""
+
+    while (aoContrario === "") {
+    aoContrario = perguntaString.split("").reverse().join("")
+    }
+
+    alert(aoContrario);
 
     //PROCESSAMENTO
 
