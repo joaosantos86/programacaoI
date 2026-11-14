@@ -1,59 +1,111 @@
-# 💻 Atividades de Programação – 2025
+# 💻 Atividades de Programação — 2025
 
-Seja bem-vindo(a) ao repositório das **Atividades de Programação – 2025**!
+Este repositório reúne as atividades e exercícios desenvolvidos ao longo de 2025 na disciplina de Programação.
 
-Aqui você encontrará todos os exercícios, desafios e práticas realizadas durante o ano letivo na disciplina de Programação. Este espaço foi criado para organizar o conteúdo estudado, facilitar a revisão e acompanhar a evolução do aprendizado.
+Os conteúdos estão organizados por assunto, facilitando a revisão dos conceitos estudados e servindo como registro da minha evolução durante o ano.
+
+---
+
+## 📁 Estrutura do repositório
+
+```text
+.
+├── Array/
+│   ├── ListaComplementar/
+│   ├── 01_arrayCrescente.html
+│   ├── ...
+│   └── 08_procuraLetra.html
+│
+├── Estrutura_Repeticao/
+│   ├── While/
+│   │   ├── questao1.html
+│   │   ├── ...
+│   │   └── questaoX.html
+│   │
+│   ├── forControl/
+│   │   ├── questao1.html
+│   │   ├── ...
+│   │   └── questaoX.html
+│   │
+│   ├── forOf/
+│   │   ├── questao1.html
+│   │   ├── ...
+│   │   └── questaoX.html
+│   │
+│   └── forOf_complementar/
+│       ├── questao1.html
+│       ├── ...
+│       └── questaoX.html
+│
+├── Estrutura_decisao/
+│   ├── IF_ELSE/
+│   │   ├── questao1.html
+│   │   ├── ...
+│   │   └── questaoX.html
+│   │
+│   ├── Operador_Ternario/
+│   │   ├── questao1.html
+│   │   ├── ...
+│   │   └── questaoX.html
+│   │
+│   └── Switch_Case/
+│       ├── questao1.html
+│       ├── ...
+│       └── questaoX.html
+│
+├── Funcoes/
+│   ├── questao1.html
+│   ├── ...
+│   └── questao12.html
+│
+├── Objetos/
+│   ├── questao1.html
+│   ├── ...
+│   └── questao10.html
+│
+└── README.md
+```
+
+---
+
+## 🧠 Conteúdos praticados
+
+Durante as atividades foram trabalhados conceitos como:
+
+- Arrays;
+- Estruturas de decisão;
+- `if / else`;
+- Operador ternário;
+- `switch case`;
+- Estruturas de repetição;
+- `while`;
+- `for`;
+- `for...of`;
+- Funções;
+- Objetos;
+- Lógica de programação;
+- Resolução de problemas.
+
+---
+
+## 🛠️ Tecnologias
+
+<div>
+
+<img src="https://img.shields.io/badge/JavaScript-0A66C2?style=for-the-badge&logo=javascript&logoColor=white">
+
+<img src="https://img.shields.io/badge/HTML5-1867C0?style=for-the-badge&logo=html5&logoColor=white">
+
+</div>
 
 ---
 
 ## 🎯 Objetivo
 
-Criar um portfólio de aprendizado completo, onde seja possível:
+Manter as atividades desenvolvidas durante a disciplina organizadas em um único repositório, facilitando a consulta e revisão dos conteúdos vistos ao longo do ano.
 
-- Revisar conteúdos essenciais de programação;
-- Praticar lógica e raciocínio computacional;
-- Registrar e acompanhar sua evolução ao longo do curso.
+Também serve como registro da evolução desde os primeiros exercícios de lógica até conteúdos como arrays, funções e objetos.
 
 ---
 
-## 📁 Estrutura do Repositório
-
-O conteúdo está organizado em pastas temáticas, agrupando os exercícios por tipo de estrutura e conceito utilizado.
-
-PROGRAMACAO1-2/
-├── IF_ELSE/
-│ ├── listaExercicios/
-│ │ ├── 01_AumentoDoPreco.html
-│ │ ├── ...
-│ │ └── 18_EstacaoDoAno.html
-│ └── listaExercicios_2/
-│ ├── 01_temperaturas.js
-│ ├── 02_classificaProduto.js
-│ ├── ...
-│ └── 10_destinoTuristico.js
-├── README.md
-├── Operador_Ternario/
-│ ├── ListaExercicios/
-│ │ ├── 01_maioridade.js
-│ │ ├── ...
-│ │ └── 10_balancoFinanceiro.js
-│ └── README.md
-├── Switch_Case/
-│ ├── ListaExercicios/
-│ │ ├── 01_turnoEstudo.js
-│ │ ├── ...
-│ │ └── 07_estacaoAno.js
-│ └── README.md
-└── README.md
-
----
-
-## 📝 Tecnologias e Linguagens
-
-Os exercícios são desenvolvidos principalmente em:
-
-- JavaScript
-
----
-
-> ✅ Este repositório é atualizado continuamente conforme as atividades vão sendo desenvolvidas
+> Repositório atualizado conforme o avanço dos conteúdos da disciplina de Programação durante 2025.
