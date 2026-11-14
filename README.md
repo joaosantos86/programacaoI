@@ -1,4 +1,4 @@
-# 💻 Atividades de Programação — 2025
+# 💻 Atividades de Programação - 2025
 
 Este repositório reúne as atividades e exercícios desenvolvidos ao longo de 2025 na disciplina de Programação.
 
